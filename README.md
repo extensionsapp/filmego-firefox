@@ -1,6 +1,6 @@
 # FILMEGO для Mozilla Firefox
 
-<a href="http://goo.gl/tdL8ih"><img src="http://filmego.org/img/habrahabr/fe_firefox.png"/></a>
+<a href="http://goo.gl/eMS4UI"><img src="http://filmego.org/img/habrahabr/fe_firefox.png"/></a>
 
 Заходите на абсолютно любой информационный кино-сайт - смотрите и скачиваете своё кино!
 
