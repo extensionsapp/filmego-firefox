@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>FILMEGO</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <style>
+        body, html {
+            width: 400px;
+            height: 350px;
+            overflow-x: hidden;
+        }
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar navbar-default navbar-top" style="margin-bottom: 0;">
+    <div class="navbar-header">
+        <a href="#" style="color: #ffffff; margin: 4px 0 0 0;" id="menu" class="navbar-toggle text-muted" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <i class="fa fa-cogs fa-2x"></i>
+        </a>
+        <a class="navbar-brand" href="http://filmego.org/" id="logo" target="_blank" style="margin: 0; padding: 5px;">
+            <img src="img/logo.png" style="height: 40px;">
+        </a>
+        <p class="navbar-text">
+            <span style="font-size: 12px; font-weight: bold; margin-left: 10px;" class="hide" id="ver"></span>
+        </p>
+    </div>
+    <div class="navbar-collapse collapse navbar-responsive-collapse">
+        <ul class="nav navbar-nav">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-volume-up"></i> <strong id="menuTranslate" data-l10n-id="menuTranslate"></strong> <b class="caret" id="menuTranslateSave"></b></a>
+                <ul class="dropdown-menu" id="translateMenu">
+                    <li><a href="#" id="idealTranslate"></a></li>
+                    <li><a href="#" id="profTranslate"></a></li>
+                    <li><a href="#" id="authorTranslate"></a></li>
+                    <li><a href="#" id="amateurTranslate"></a></li>
+                    <li><a href="#" id="subTranslate"></a></li>
+                    <li><a href="#" id="allTranslate"></a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-picture-o"></i> <strong id="menuQuality" data-l10n-id="menuQuality"></strong> <b class="caret" id="menuQualitySave"></b></a>
+                <ul class="dropdown-menu" id="qualityMenu">
+                    <li><a href="#" id="idealQuality"></a></li>
+                    <li><a href="#" id="goodQuality"></a></li>
+                    <li><a href="#" id="badQuality"></a></li>
+                    <li><a href="#" id="kpkQuality"></a></li>
+                    <li><a href="#" id="allQuality"></a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tags"></i> <strong id="menuType" data-l10n-id="menuType"></strong> <b class="caret" id="menuTypeSave"></b></a>
+                <ul class="dropdown-menu" id="typeMenu">
+                    <li><a href="#" id="extendedType"></a></li>
+                    <li><a href="#" id="theatricalType"></a></li>
+                    <li><a href="#" id="directedType"></a></li>
+                    <li><a href="#" id="alternativeType"></a></li>
+                    <li><a href="#" id="allType"></a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-leaf" style="color: #7effdc;"></i> <strong id="menuHelp" data-l10n-id="menuHelp" style="color: #7effdc;"></strong> <b class="caret" style="color: #7effdc;"></b></a>
+                <ul class="dropdown-menu" id="helpMenu">
+                    <li><a href="#" id="onlineHelp"></a></li>
+                    <li><a href="#" id="downloadHelp"></a></li>
+                    <li><a href="#" id="magnetHelp"></a></li>
+                    <li><a href="#" id="updownHelp"></a></li>
+                    <li><a href="#" id="linkHelp"></a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://goo.gl/lwB2wO" target="_blank"><i class="fa fa-bug" style="color: #7effdc;"></i> <strong id="menuAbout" data-l10n-id="menuAbout" style="color: #7effdc;"></strong></a>
+            </li>
+        </ul>
+        <div class="form-group">
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control" id="query">
+                <span class="input-group-btn">
+                    <a href="#" style="min-width: 100px;" id="search" class="btn btn-default" data-toggle="collapse" data-target=".navbar-responsive-collapse" data-l10n-id="menuSearch"></a>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row" style="min-height: 355px;">
+    <div class="col-xs-12" id="allData">
+        <div class="btn-group btn-group-justified hide" id="menuNav">
+            <div class="btn-group btn-group-sm">
+                <a href="#" class="btn" id="menuOnline" data-l10n-id="menuOnline"></a>
+            </div>
+            <div class="btn-group btn-group-sm">
+                <a href="#" class="btn" id="menuFilterOn" data-l10n-id="menuFilterOn"></a>
+            </div>
+            <div class="btn-group btn-group-sm">
+                <a href="#" class="btn" id="menuFilterOff" data-l10n-id="menuFilterOff"></a>
+            </div>
+        </div>
+        <div class="list-group" id="information" style="margin: 0; padding: 0;"></div>
+        <div class="list-group" id="contentOnline" style="margin: 0; padding: 0;"></div>
+        <div class="list-group" id="contentFilterOff" style="margin: 0; padding: 0;"></div>
+        <div class="list-group" id="contentFilterOn" style="margin: 0; padding: 0;"></div>
+    </div>
+</div>
+</body>
+</html>

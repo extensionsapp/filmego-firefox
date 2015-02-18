@@ -1,0 +1,12 @@
+{
+    "name": "fe_firefox",
+    "title": "FILMEGO",
+    "id": "jid1-6mKBAgxkvt3jdA",
+    "description": "Смотри и скачай свое кино! [FE]",
+    "author": "ExtensionsApp",
+    "license": "MPL 2.0",
+    "version": "2.0.15.4",
+    "permissions": {
+        "cross-domain-content": ["http://api.qimdb.com/","http://filmego.org/"]
+    }
+}
